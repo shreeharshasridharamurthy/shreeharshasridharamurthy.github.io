@@ -1,0 +1,21 @@
+<div id="dvCtEmail">
+	<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScIjXVx-9HHuSsVQMmAWfGDYdtXjVx_YQL9vp4rLJxr580Tww/viewform?entry.2094297490&entry.868055156&entry.741406875" target="hidden_iframe" onsubmit="submitted=true;">
+	  Name:<br>
+	  <input type="text" name="entry.2094297490" id="entry.2094297490"><br>
+	  Email:<br>
+	  <input type="text" name="entry.868055156" id="entry.868055156">
+	  Question:<br>
+	  <textarea rows="4" cols="50" name="entry.741406875" id="entry.741406875"></textarea>
+	  <input type="submit" value="Submit">
+	</form>
+
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+	<script type="text/javascript">var submitted=false;</script>
+	<script type="text/javascript">
+	$('#gform').on('submit', function(e) {
+	  $('#gform *').fadeOut(2000);
+	  $('#gform').prepend('Your submission has been processed...');
+	  });
+	</script>
+</div>
